@@ -8,8 +8,11 @@ angular.module('eSpa')
         return  $http.post(API + '/staffs.json', {user : staff})
       }
 
-      this.updateStaff = function(){
-
+      this.updateStaff = function(staff){
+        return  $http.put(API + '/staffs/' + staff.id + '.json', {user : staff})
+      }
+      this.findStaff = function(id){
+      return  $http.get(API +'/staffs/'+ id+'.json')
       }
 
 }]);

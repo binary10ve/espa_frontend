@@ -23,6 +23,10 @@ angular
         templateUrl :"views/staff/new-staff.html",
         controller : "eSpaNewStaffCtrl"
       })
+      .when('/staff/:id/edit', {
+        templateUrl :"views/staff/edit-staff.html",
+        controller : "eSpaEditStaffCtrl"
+      })
       .otherwise({
         redirectTo: '/dashboard'
       });
