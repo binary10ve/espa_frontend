@@ -1,0 +1,102 @@
+<aside class="right-side">
+    <section class="content-header">
+        <h1>
+            New Staff
+
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">New Staff</li>
+        </ol>
+    </section>
+    <section class="content">
+        <div class="row">
+            <section class="col-xs-12">
+                <form role="form">
+                <div class="col-md-6">
+                    <!-- general form elements -->
+                    <div class="">
+                        <div class="box-header">
+
+                        </div><!-- /.box-header -->
+                        <!-- form start -->
+
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">First Name</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="First Name" ng-model="staff.first_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Middle Name</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Middle Name" ng-model="staff.middle_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Last Name</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name" ng-model="staff.last_name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Date of Birth</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="" ng-model="staff.date_of_birth">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Temporary Address</label>
+                                    <textarea class="form-control" rows="3" placeholder="Enter Temporary Address" ng-model="staff.temporary_address"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Permanent Address</label>
+                                    <textarea class="form-control" rows="3" placeholder="Enter Permanent Address" ng-model="staff.permanent_address"></textarea>
+                                </div>
+                            </div><!-- /.box-body -->
+
+                            <div class="box-footer">
+                                <button type="submit" class="btn btn-primary" ng-click="createStaff()">Submit</button>
+                                <a href="/#/manage/staff" class="btn btn-default" >Cancel</a>
+                            </div>
+
+                    </div><!-- /.box -->
+
+                </div>
+                <div class="col-md-6">
+                    <!-- general form elements -->
+                    <div class="">
+                        <!-- form start -->
+
+                            <div class="box-body">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control"  placeholder="Enter email" ng-model="staff.email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Phone1</label>
+                                    <input type="text" class="form-control" placeholder="Enter Phone1" ng-model="staff.phone1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Phone2</label>
+                                    <input type="text" class="form-control"  placeholder="Enter Phone2" ng-model="staff.phone2">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">PAN No.</label>
+                                    <input type="text" class="form-control"  placeholder="Enter PAN no." ng-model="staff.pan_no">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Blood Group.</label>
+                                    <input type="text" class="form-control" placeholder="Enter Blood Group" ng-model="staff.blood_group">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Emergency Contact No.</label>
+                                    <input type="text" class="form-control"  placeholder="Enter Emergency Contact no." ng-model="staff.emergency_contact_no">
+                                </div>
+                            </div><!-- /.box-body -->
+                    </div><!-- /.box -->
+
+                </div>
+                </form>
+            </section>
+        </div>
+    </section>
+</aside>
