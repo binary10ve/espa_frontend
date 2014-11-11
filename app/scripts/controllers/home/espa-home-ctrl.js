@@ -3,7 +3,7 @@ angular.module('eSpa')
 
 
     $scope.eventSources = [];
-$http.get('/api/v1/home.json').
+	$http.get('/api/v1/home.json').
   success(function(data, status, headers, config) {
     // this callback will be called asynchronously
     // when the response is available

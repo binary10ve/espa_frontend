@@ -1,7 +1,7 @@
 'use strict';
 angular
   .module('eSpa')
-  .config(function ($routeProvider) {
+  .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/login', {
         templateUrl: 'views/pre-login/login.html',
@@ -30,4 +30,4 @@ angular
       .otherwise({
         redirectTo: '/dashboard'
       });
-  })
+  }])

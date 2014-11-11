@@ -24,12 +24,13 @@
 
                         <div class="box-body">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">First Name</label>
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter First Name">
+                                <label>First Name</label>
+                                <input type="text" class="form-control" ng-model="client.first_name" placeholder="Enter First Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Phone no</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone no.">
+                                <input type="text" ng-model="client.phone1" placeholder="Enter Phone no." typeahead="item.phone1 for item in getPhoneNo($viewValue)" typeahead-on-select="onPhoneSelect($item)" class="form-control">
+
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Notes</label>
@@ -51,11 +52,12 @@
 
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Last Name</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Last Name">
+                                <input type="text" class="form-control" ng-model="client.last_name" placeholder="Enter Last Name">
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Email Id</label>
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Email">
+                                <input type="text" ng-model="client.email_id" placeholder="Enter Email Id." typeahead="item.email_id for item in getEmailId($viewValue)" typeahead-on-select="onEmailSelect($item)" class="form-control">
+
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Gender</label>
@@ -87,41 +89,41 @@
                         <div class="tab-pane active" id="tab_1-1">
                             <div class="box-body">
                                 <a class="btn btn-app">
-                                    <i class="fa fa-edit"></i> Eyebrows
+                                    Eyebrows
                                 </a>
                                 <a class="btn btn-app">
-                                    <i class="fa fa-play"></i> Haircut
+                                    Haircut
                                 </a>
                                 <a class="btn btn-app">
-                                    <i class="fa fa-repeat"></i> Dye
+                                    Dye
                                 </a>
                                 <a class="btn btn-app">
-                                    <i class="fa fa-pause"></i> Color
+                                    Color
                                 </a>
                                 <a class="btn btn-app">
-                                    <i class="fa fa-save"></i> Straightning
+                                    Straightning
                                 </a>
                                 <a class="btn btn-app">
-                                    <i class="fa fa-bullhorn"></i> Curl
+                                    Curl
                                 </a>
                                 <a class="btn btn-app">
-                                    <i class="fa fa-barcode"></i> Products
+                                    Products
                                 </a>
                                 <a class="btn btn-app">
-                                    <span class="badge bg-purple">891</span>
-                                    <i class="fa fa-users"></i> Users
+
+                                    Users
                                 </a>
                                 <a class="btn btn-app">
-                                    <span class="badge bg-teal">67</span>
-                                    <i class="fa fa-inbox"></i> Orders
+
+                                    Orders
                                 </a>
                                 <a class="btn btn-app">
-                                    <span class="badge bg-aqua">12</span>
-                                    <i class="fa fa-envelope"></i> Inbox
+
+                                    Inbox
                                 </a>
                                 <a class="btn btn-app">
-                                    <span class="badge bg-red">531</span>
-                                    <i class="fa fa-heart-o"></i> Likes
+
+                                    Likes
                                 </a>
                             </div>
                         </div><!-- /.tab-pane -->

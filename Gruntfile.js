@@ -1,4 +1,4 @@
-// Generated on 2014-10-11 using generator-angular 0.9.5
+// Generated on 2014-11-09 using generator-angular 0.9.5
 'use strict';
 
 // # Globbing
@@ -30,7 +30,7 @@ module.exports = function (grunt) {
     // Watches files for changes and runs tasks based on the changed files
     watch: {
       bower: {
-        files: ['bower.json'],
+        files: ['bower.json']
       },
       js: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
@@ -160,15 +160,15 @@ module.exports = function (grunt) {
     },
 
     // Automatically inject Bower components into the app
-    // wiredep: {
-    //   options: {
-    //     cwd: '<%= yeoman.app %>'
-    //   },
-    //   app: {
-    //     src: ['<%= yeoman.app %>/index.html'],
-    //     ignorePath:  /\.\.\//
-    //   }
-    // },
+    wiredep: {
+      options: {
+        cwd: '<%= yeoman.app %>'
+      },
+      app: {
+        src: ['<%= yeoman.app %>/index.html'],
+        ignorePath:  /\.\.\//
+      }
+    },
 
     // Renames files for browser caching purposes
     filerev: {
@@ -318,6 +318,11 @@ module.exports = function (grunt) {
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
+        }, {
+          expand: true,
+          cwd: 'bower_components/bootstrap/dist',
+          src: 'fonts/*',
+          dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {

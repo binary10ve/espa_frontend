@@ -5,6 +5,5 @@ angular
     'ngSanitize',
     'Devise',
     'ui.calendar',
-    'ui.bootstrap',
-    'willPaginate'
+    'ui.bootstrap'
   ])

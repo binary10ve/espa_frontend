@@ -12,13 +12,13 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <!-- font Awesome -->
     <link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <!-- Theme style -->
-        <link href="styles/AdminLTE.css" rel="stylesheet" type="text/css" />
-      <link href="bower_components/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
-    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <link href="styles/AdminLTE.css" rel="stylesheet" type="text/css" />
+      
+    
     <!-- endbuild -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>        
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>        
   </head>
   <body ng-app="eSpa" class="skin-blue">
   <header class="header" ng-include="'views/templates/header.html'"></header>
@@ -40,13 +40,6 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="//code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>        
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>        
-
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
         <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
@@ -56,6 +49,13 @@
         <script src="bower_components/moment/moment.js"></script>
         <script src="bower_components/fullcalendar/fullcalendar.js"></script>
         <script src="bower_components/angular-ui-calendar/src/calendar.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        
+
+
         <script src="scripts/directives/angular-will-paginate.min.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/config/auth.js"></script>

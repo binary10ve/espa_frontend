@@ -3403,3 +3403,9 @@ fieldset[disabled] .btn-vk.active {
   color: #587ea3;
   background-color: #ffffff;
 }
+
+
+/*Customization*/
+.btn.btn-app {
+    padding: 20px 5px;
+}
