@@ -1,5 +1,15 @@
 angular.module('eSpa')
-.service('eSpaStaffRequestManagerSV',['API','$http',function(API,$http){
+.service('eSpaStaffRequestManagerSV',['GLOBAL_CONFIG','$http',function(config,$http){
+
+
+      var API = config.API + config.END_URL
+
+
+
+      this.getDashboardData   = function(){
+       return  $http.get(API + '/home.json',{params : { page : page}}) 
+      }
+
 	    this.getStaff = function(page){
        return  $http.get(API + '/staffs.json',{params : { page : page}})
       }

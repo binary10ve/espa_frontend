@@ -1,2 +1,5 @@
 angular.module('eSpa')
-  .constant("API","/api/v1")
+  .constant("GLOBAL_CONFIG", {
+  	API : "/api/v1",
+  	END_URL : "http://localhost:3000"
+  })

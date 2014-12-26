@@ -1,9 +1,10 @@
 angular.module('eSpa')
-.controller('eSpaHomeCtrl',['$scope','$http',function($scope, $http){
+.controller('eSpaHomeCtrl',['$rootScope','$scope','$http','eSpaDashboardRequestManagerSV',function($rootScope,$scope, $http, Dashboard){
 
 
     $scope.eventSources = [];
-	$http.get('/api/v1/home.json').
+    $rootScope.preLogin = false;
+	Dashboard.getDashboardData().
   success(function(data, status, headers, config) {
     // this callback will be called asynchronously
     // when the response is available

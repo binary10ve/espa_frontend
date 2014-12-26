@@ -1,6 +1,10 @@
 angular.module('eSpa')
-.controller('eSpaLoginCtrl',['$scope','$http','$location','Auth',function($scope, $http, $location ,Auth){
+.controller('eSpaLoginCtrl',['$rootScope','$scope','$http','$location','Auth',function($rootScope, $scope, $http, $location ,Auth){
 
+
+
+
+		$rootScope.preLogin =  true;
 
 		$scope.signIn = function(){
 
