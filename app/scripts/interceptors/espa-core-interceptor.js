@@ -11,7 +11,7 @@ angular.module('eSpa')
               var status = response.status;
               console.log("status",status)
               if (status == 401) {
-               //$location.path('/login');
+              // $location.path('/login');
               }
               return $q.reject(response);
             }
